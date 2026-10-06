@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CV digital y portafolio de proyectos de Kevin Arturo Castellanos Amador, ingeniero en sistemas y desarrollador web full stack.">
+    <title>Kevin Arturo Castellanos Amador | CV digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261006-2">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span>Kevin Castellanos</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Ingeniero en Sistemas Computacionales</p>
+          <h1 id="hero-title">Kevin Arturo Castellanos Amador</h1>
+          <p class="hero-copy">
+            Desarrollo aplicaciones web, plataformas institucionales y soluciones digitales con enfoque en claridad, rendimiento y procesos mejor organizados.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#proyectos">Ver proyectos</a>
+            <a class="button ghost" href="assets/kevin-arturo-castellanos-cv.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#perfil" aria-label="Bajar a perfil">↓</a>
+      </section>
+
+      <section class="intro-band" id="perfil">
+        <div class="section-kicker section-reveal">Perfil</div>
+        <div class="intro-grid">
+          <h2 class="section-title section-reveal">Soluciones web para instituciones, empresas y procesos que necesitan orden.</h2>
+          <div class="intro-copy section-reveal">
+            <p>
+              Soy desarrollador web full stack con experiencia en proyectos del sector privado y gubernamental. Me especializo en aplicaciones web, bases de datos, automatización de procesos, interfaces responsivas y herramientas digitales para análisis de información.
+            </p>
+            <p>
+              Trabajo con una mentalidad analítica y autodidacta: entiendo el problema, diseño una solución limpia y la llevo a una experiencia práctica para usuarios reales.
+            </p>
+          </div>
+        </div>
+        <div class="metric-row section-reveal" aria-label="Resumen profesional">
+          <div>
+            <strong>2022</strong>
+            <span>Inicio como creador de páginas web independiente</span>
+          </div>
+          <div>
+            <strong>2023</strong>
+            <span>Desarrollo full stack en Gobierno Digital</span>
+          </div>
+          <div>
+            <strong>7</strong>
+            <span>Proyectos destacados en portafolio</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="experiencia">
+        <div class="section-heading section-reveal">
+          <p class="section-kicker">Experiencia</p>
+          <h2>Trabajo reciente</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item section-reveal">
+            <div class="timeline-meta">
+              <span>Ene 2023 - Actualidad</span>
+              <strong>Secretaría General de Gobierno del Estado de Nayarit</strong>
+            </div>
+            <div>
+              <h3>Desarrollador Web Full Stack | Gobierno Digital</h3>
+              <p>
+                Desarrollo soluciones para digitalización de procesos administrativos, gestión documental, análisis institucional y transparencia. He participado en plataformas internas, directorios virtuales, sistemas de captura, paneles administrativos y herramientas de visualización de datos.
+              </p>
+              <ul class="clean-list">
+                <li>Frontend con React, JavaScript moderno y Tailwind CSS.</li>
+                <li>Backend con PHP, Laravel, Django e integración de APIs.</li>
+                <li>Modelado, filtrado y estructuración de datos institucionales.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item section-reveal">
+            <div class="timeline-meta">
+              <span>Ene 2022 - Actualidad</span>
+              <strong>Independiente</strong>
+            </div>
+            <div>
+              <h3>Creador de páginas web</h3>
+              <p>
+                Diseño y desarrollo sitios personalizados para empresas y clientes particulares, combinando WordPress, HTML, CSS y personalización avanzada para catálogos, formularios, secciones dinámicas y experiencias responsivas.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section projects-section" id="proyectos">
+        <div class="section-heading section-reveal">
+          <p class="section-kicker">Portafolio</p>
+          <h2>Proyectos hechos</h2>
+          <p>Una selección de plataformas públicas, sitios corporativos y sistemas internos desarrollados para operación real.</p>
+        </div>
+
+        <div class="project-filters section-reveal" aria-label="Filtros de proyectos">
+          <button class="filter-button active" type="button" data-filter="all">Todos</button>
+          <button class="filter-button" type="button" data-filter="publico">Públicos</button>
+          <button class="filter-button" type="button" data-filter="institucional">Institucionales</button>
+          <button class="filter-button" type="button" data-filter="privado">Privados</button>
+        </div>
+
+        <div class="project-grid" data-project-grid></div>
+      </section>
+
+      <section class="content-section skills-section">
+        <div class="section-heading section-reveal">
+          <p class="section-kicker">Stack</p>
+          <h2>Herramientas y enfoque técnico</h2>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-group section-reveal">
+            <h3>Lenguajes</h3>
+            <p>Java, Python, PHP, JavaScript, Dart, HTML, CSS</p>
+          </div>
+          <div class="skill-group section-reveal">
+            <h3>Web</h3>
+            <p>React, WordPress, Node.js, Express.js, Bootstrap, Laravel, Vue.js, Django</p>
+          </div>
+          <div class="skill-group section-reveal">
+            <h3>Datos</h3>
+            <p>MySQL, PostgreSQL, MongoDB, Firestore, Pandas, Power BI, Plotly, Matplotlib</p>
+          </div>
+          <div class="skill-group section-reveal">
+            <h3>IA aplicada</h3>
+            <p>Prompt engineering, análisis asistido, generación y refactorización de código, integración de modelos mediante APIs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section education-section" id="formacion">
+        <div class="section-heading section-reveal">
+          <p class="section-kicker">Formación</p>
+          <h2>Educación y cursos</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-item section-reveal">
+            <span>Ago 2019 - Ago 2024</span>
+            <h3>Ingeniería en Sistemas Computacionales</h3>
+            <p>Instituto Tecnológico de Tepic. Especialidad en desarrollo web. Cédula profesional 14581214.</p>
+          </article>
+          <article class="education-item section-reveal">
+            <span>Actualmente</span>
+            <h3>Maestría en Ingeniería de Software y Sistemas Informáticos</h3>
+            <p>UNIR, Universidad Internacional de La Rioja.</p>
+          </article>
+          <article class="education-item section-reveal">
+            <span>Ene 2016 - Ago 2019</span>
+            <h3>Profesional Técnico Bachiller en Soporte y Mantenimiento</h3>
+            <p>CONALEP Plantel 169, Tepic. Cédula profesional 14698543.</p>
+          </article>
+        </div>
+        <div class="course-strip section-reveal" aria-label="Cursos destacados">
+          <span>Cisco Networking Academy</span>
+          <span>Google AI Professional Certificate</span>
+          <span>Python y Data Science</span>
+          <span>Power BI y visualización</span>
+          <span>Gestión documental</span>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contacto">
+        <div class="contact-inner section-reveal">
+          <p class="section-kicker">Contacto</p>
+          <h2>Conversemos sobre un proyecto, una plataforma o una mejora digital.</h2>
+          <div class="contact-links">
+            <a href="mailto:arturocastellanos62@outlook.com">arturocastellanos62@outlook.com</a>
+            <a href="tel:+523118904338">+52 311 890 4338</a>
+            <span>Tepic, Nayarit, México</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Kevin Arturo Castellanos Amador</span>
+      <a href="#inicio">Volver arriba</a>
+    </footer>
+
+    <div class="project-modal" data-modal aria-hidden="true">
+      <div class="modal-backdrop" data-modal-close></div>
+      <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" type="button" aria-label="Cerrar galería" data-modal-close>×</button>
+        <div class="modal-copy">
+          <p class="section-kicker" data-modal-category></p>
+          <h2 id="modal-title" data-modal-title></h2>
+          <p data-modal-description></p>
+          <div class="modal-actions" data-modal-actions></div>
+        </div>
+        <div class="modal-gallery">
+          <button class="gallery-control previous" type="button" aria-label="Imagen anterior" data-gallery-prev>‹</button>
+          <img src="" alt="" data-modal-image>
+          <button class="gallery-control next" type="button" aria-label="Imagen siguiente" data-gallery-next>›</button>
+          <span data-gallery-count></span>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
